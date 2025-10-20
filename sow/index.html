@@ -3,259 +3,677 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Some Outstanding Webs – Informe de Análisis</title>
-    <link rel="stylesheet" href="/assets/css/index.css" />
-    <link rel="stylesheet" href="/assets/css/sow.css" />
+    <title>Some Outstanding Webs – Análisis de Sitios Premiados</title>
+    <link rel="stylesheet" href="../assets/css/index.css" />
+    <link rel="stylesheet" href="../assets/css/sow.css" />
   </head>
-
   <body>
-    <!-- Portada animada -->
-    <section class="cover">
-      <h1 class="title">Some Outstanding Webs</h1>
-    </section>
-
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#balvenie">The Balvenie</a></li>
-          <li><a href="#makemepulse">Make Me Pulse</a></li>
-          <li><a href="#porsche">Porsche Dream Machine</a></li>
+    <nav class="main-nav">
+      <div class="nav-content">
+        <div class="logo">SOW</div>
+        <ul class="nav-links">
+          <li><a href="#build">Build in Amsterdam</a></li>
+          <li><a href="#pulse">Make Me Pulse</a></li>
           <li><a href="#monads">Monads</a></li>
+          <li><a href="#hop">Active Hop</a></li>
         </ul>
-      </nav>
+      </div>
+    </nav>
+
+    <header class="parallax-header">
+      <div class="hero-content">
+        <h1 class="hero-title">Some Outstanding Webs</h1>
+        <p class="hero-subtitle">
+          Análisis crítico de diseño web contemporáneo
+        </p>
+      </div>
     </header>
 
-    <main>
-      <!-- THE BALVENIE -->
-      <section id="balvenie">
-        <h2>The Balvenie – Build in Amsterdam</h2>
-        <iframe
-          src="https://www.buildinamsterdam.com/case/the-balvenie"
-          title="The Balvenie Website"
-          width="100%"
-          height="400"
-          loading="lazy"
-        ></iframe>
-
-        <div class="analysis-text">
-          <p>
-            <strong>1. Selección:</strong> Elegí este sitio porque combina
-            artesanía tradicional y diseño digital contemporáneo. Representa la
-            fusión entre storytelling, branding y experiencia inmersiva.
-          </p>
-          <p>
-            <strong>2. Impresión inicial:</strong> La web transmite calidez,
-            tradición y maestría, evocando el universo artesanal del whisky
-            escocés. Desde el primer scroll se percibe un ritmo pausado y una
-            atmósfera elegante.
-          </p>
-          <p>
-            <strong>3. Estructura:</strong> La estructura es narrativa y lineal,
-            guiando al usuario a través de capítulos visuales con transiciones
-            suaves. La jerarquía es clara y coherente.
-          </p>
-          <p>
-            <strong>4. Visual:</strong> Predominan los tonos cálidos y la
-            tipografía serif. Las fotografías y vídeos refuerzan la identidad
-            del producto y la coherencia entre marca y experiencia digital.
-          </p>
-          <p>
-            <strong>5. Interacción:</strong> El scroll activa microanimaciones
-            que aportan dinamismo sin romper el tono sobrio. La navegación es
-            fluida y coherente con la historia.
-          </p>
-          <p>
-            <strong>6. Usabilidad:</strong> Experiencia fluida en todos los
-            dispositivos. Buena accesibilidad y rendimiento general, aunque el
-            peso gráfico puede ralentizar en móviles.
-          </p>
-          <p>
-            <strong>7. Técnico:</strong> Optimizado con renderizado fluido, lazy
-            loading y recursos comprimidos. Uso preciso de WebGL y vídeo
-            adaptativo.
-          </p>
-          <p>
-            <strong>8. Criterios de excelencia:</strong> Coherencia total entre
-            estética y contenido: diseño, branding y UX convergen en una
-            narrativa con alma.
-          </p>
-          <p>
-            <strong>9. Conclusión:</strong> Sobresaliente por su narrativa
-            visual y atmósfera inmersiva. Enseña que la elegancia digital puede
-            ser emocional y artesanal.
-          </p>
+    <main class="main-content">
+      <!-- BUILD IN AMSTERDAM -->
+      <article id="build" class="site-analysis">
+        <div class="analysis-header">
+          <span class="site-number">01</span>
+          <h2>Build in Amsterdam</h2>
+          <a
+            class="site-link"
+            href="https://www.buildinamsterdam.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visitar sitio web ↗
+          </a>
         </div>
-      </section>
+
+        <div class="site-preview">
+          <iframe
+            src="https://www.buildinamsterdam.com"
+            title="Build in Amsterdam"
+            loading="lazy"
+          ></iframe>
+        </div>
+        <button class="toggle-analysis" onclick="toggleAnalysis(this)">
+          Ver análisis completo
+        </button>
+        <div class="analysis-collapsible">
+          <div class="analysis-pair-grid">
+            <section class="analysis-block">
+              <h3>Selección:</h3>
+              <p>
+                Escogí Build in Amsterdam porque su home me atrapó por estética
+                y claridad: tipografías grandes y mucho aire. No es solo
+                “bonito”, huele a marca con criterio: parece un showroom digital
+                serio, no un experimento pasajero. Además, como agencia
+                premiada, me sirve para mirar cómo equilibran branding,
+                conversión y narrativa sin adornos de más. En resumen, me parece
+                una buena web para aprender a recortar ruido y dejar lo
+                esencial.
+              </p>
+            </section>
+            <section class="analysis-block">
+              <h3>Impresión inicial:</h3>
+              <p>
+                La primera pantalla transmite seguridad y foco: titulares
+                contundentes, copy breve y una llamada rápida a ver el trabajo.
+                Te da la sensación de “esto es premium pero sin postureo”: el
+                diseño no intenta gritar, te habla claro. El ritmo del scroll es
+                agradable; cada bloque tiene un objetivo y no hay distracciones
+                raras. Terminas con ganas de entrar a los casos porque la
+                portada vende criterio y eso engancha.
+              </p>
+            </section>
+            <section class="analysis-block">
+              <h3>Estructura:</h3>
+              <p>
+                El menú no es nada rebuscado, todo a un clic. Se trata de menú
+                fijo y los headings grandes hacen que te ubiques sin pensar, que
+                al final es lo que queremos cuando exploramos un portfolio. Cada
+                sección es escaneable y te abre la puerta a proyectos reales,
+                que es donde verificas si lo que prometen se cumple. A nivel
+                percepción, la estructura ayuda a que el mensaje “flagship
+                digital” de la homepage, se entienda como una oferta concreta,
+                no un eslogan más.
+              </p>
+            </section>
+            <section class="analysis-block">
+              <h3>Visual:</h3>
+              <p>
+                La paleta de color es monocroma con acento en las imágenes de
+                los casos, lo que deja a la tipografía llevar la voz cantante.
+                Los titulares en grande tienen mucha personalidad, y los
+                espacios en blanco dejan respirar el contenido, se nota la mano
+                en la composición. El branding suena a lujo funcional. Esta
+                contención visual refuerza la idea de “tienda insignia digital”:
+                sobrio, estable y con intención.
+              </p>
+            </section>
+            <section class="analysis-block">
+              <h3>Interacción:</h3>
+              <p>
+                Las transiciones son suaves, sin “scroll-jacking” agresivo; el
+                sitio confía en que el usuario sabe moverse. Los hovers en cards
+                y el play del showreel dan feedback justo para guiar la
+                curiosidad. Nada intenta impresionar por técnica: impresiona por
+                lo fluido que se siente. Es el tipo de interacción que se busca
+                en proyectos comerciales reales: elegante, útil y que no te robe
+                el foco.
+              </p>
+            </section>
+            <section class="analysis-block">
+              <h3>Usabilidad:</h3>
+              <p>
+                El contraste alto y los tamaños de letra generosos facilitan la
+                lectura; no estás forzando los ojos para entender un titular. El
+                menú persistente reduce fricción y el contenido dice lo que es
+                sin jerga confusa, lo cual ayuda a usuarios no técnicos. El
+                sitio depende de imágenes y vídeos para enseñar casos, pero el
+                texto principal está disponible y ordenado, así que no quedas a
+                oscuras si algo no carga. En general, te sientes orientado en
+                todo momento.
+              </p>
+            </section>
+          </div>
+        </div>
+
+        <section class="technical-section">
+          <h3>Técnico:</h3>
+
+          <div class="metrics-cards">
+            <div class="metric">
+              <span class="metric-label">Performance Score</span>
+              <span class="metric-value">62/100</span>
+            </div>
+            <div class="metric">
+              <span class="metric-label">Wave</span>
+              <span class="metric-value">0 errors<br />0 contrast errors</span>
+            </div>
+            <div class="metric">
+              <span class="metric-label">W3C Validator</span>
+              <span class="metric-value">16 errors<br />26 info messages</span>
+            </div>
+          </div>
+          <p class="technical-text">
+            El Performance score es 62/100, así que la web funciona pero podría
+            ir más suelta en velocidad y respuesta; no es dramático, pero deja
+            margen claro de mejora. En accesibilidad, WAVE da 0 errores y 0
+            contrast errors, lo cual es muy buena señal: el texto se lee bien,
+            los colores están equilibrados y, en general no hay problemas
+            básicos. Donde flojea es en el marcado HTML: el W3C Validator
+            detecta 16 errores y 26 “info messages”; no todo rompe la página,
+            pero sí indica detalles a corregir como etiquetas mal anidadas o
+            atributos no válidos. Dicho simple: visualmente está cuidada y es
+            accesible, pero hay trabajo que hacer para que el rendimiento esté
+            al nivel del diseño.
+          </p>
+        </section>
+
+        <section class="final-grid">
+          <div class="final-block">
+            <h3>Criterios de excelencia:</h3>
+            <p>
+              Si evalúo con la rúbrica “tipo Awwwards” (Diseño 40%, Usabilidad
+              30%, Creatividad 20%, Contenido 10%), aquí el sitio brilla sobre
+              todo en Diseño y Usabilidad por su limpieza y foco. La Creatividad
+              existe, pero en clave de sistema visual y copy, no en efectos
+              espectaculares; y el Contenido está bien enfocado al valor de
+              negocio (flagship + casos). El balance forma–función es justo lo
+              que se suele premiar cuando no quieres sacrificar claridad por
+              “wow”.
+            </p>
+          </div>
+          <div class="final-block">
+            <h3>Conclusión:</h3>
+            <p>
+              Build in Amsterdam me deja la sensación de menos es más, pero bien
+              pensado: un sistema tipográfico sólido, mucho aire y una
+              arquitectura simple que te guía sin esfuerzo. Su mayor fortaleza
+              es la confianza que transmite: no necesita efectos locos para
+              parecer de alto nivel, le basta con claridad y consistencia. La
+              cara B es que, si buscas una experiencia rompedorísima o
+              experimental, aquí te vas a quedar con ganas porque priorizan
+              estabilidad y negocio.
+            </p>
+          </div>
+        </section>
+      </article>
 
       <!-- MAKE ME PULSE -->
-      <section id="makemepulse">
-        <h2>Make Me Pulse</h2>
-        <iframe
-          src="https://www.makemepulse.com/"
-          title="Make Me Pulse Website"
-          width="100%"
-          height="400"
-          loading="lazy"
-        ></iframe>
-
-        <div class="analysis-text">
-          <p>
-            <strong>1. Selección:</strong> Referencia clave en producción
-            digital interactiva, premiada por su creatividad técnica y capacidad
-            para emocionar con tecnología.
-          </p>
-          <p>
-            <strong>2. Impresión inicial:</strong> Genera curiosidad inmediata
-            gracias a su mezcla de interactividad, sonido y animación 3D.
-            Inmersivo desde el inicio.
-          </p>
-          <p>
-            <strong>3. Estructura:</strong> Portfolio modular con navegación
-            clara y transiciones fluidas que generan continuidad visual.
-          </p>
-          <p>
-            <strong>4. Visual:</strong> Minimalismo con paleta neutra y
-            tipografía geométrica. El espacio negativo potencia las animaciones
-            y la sensación de modernidad.
-          </p>
-          <p>
-            <strong>5. Interacción:</strong> Animaciones, efectos 3D y scroll
-            reactivo con microinteracciones sonoras. Cada acción refuerza la
-            narrativa del estudio.
-          </p>
-          <p>
-            <strong>6. Usabilidad:</strong> Navegación sencilla pese a la
-            complejidad visual. En móvil mantiene buena adaptación, aunque puede
-            ralentizarse en dispositivos antiguos.
-          </p>
-          <p>
-            <strong>7. Técnico:</strong> Basado en Three.js y WebGL con
-            renderizados suaves. Excelente optimización y estructura semántica
-            limpia.
-          </p>
-          <p>
-            <strong>8. Criterios de excelencia:</strong> Domina la técnica al
-            servicio de la emoción. No usa efectos vacíos, sino con propósito
-            expresivo.
-          </p>
-          <p>
-            <strong>9. Conclusión:</strong> Ejemplo de diseño experimental con
-            sentido. La interactividad comunica identidad y emoción de marca.
-          </p>
+      <article id="pulse" class="site-analysis">
+        <div class="analysis-header">
+          <span class="site-number">02</span>
+          <h2>Make Me Pulse</h2>
+          <a
+            class="site-link"
+            href="https://www.makemepulse.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visitar sitio web ↗
+          </a>
         </div>
-      </section>
 
-      <!-- PORSCHE DREAM MACHINE -->
-      <section id="porsche">
-        <h2>Porsche Dream Machine – Lusion</h2>
-        <iframe
-          src="https://lusion.co/projects/porsche_dream_machine"
-          title="Porsche Dream Machine Website"
-          width="100%"
-          height="400"
-          loading="lazy"
-        ></iframe>
-
-        <div class="analysis-text">
-          <p>
-            <strong>1. Selección:</strong> Representa la excelencia técnica en
-            3D web. Lusion une estética, movimiento y precisión.
-          </p>
-          <p>
-            <strong>2. Impresión inicial:</strong> Impactante y cinematográfico,
-            evoca velocidad, lujo y tecnología avanzada.
-          </p>
-          <p>
-            <strong>3. Estructura:</strong> Recorrido visual interactivo con
-            estructura guiada por scroll. Cada bloque es una escena 3D distinta.
-          </p>
-          <p>
-            <strong>4. Visual:</strong> Estética oscura, metálica y tecnológica.
-            Tipografías condensadas y efectos de luz espectaculares.
-          </p>
-          <p>
-            <strong>5. Interacción:</strong> El usuario controla el movimiento,
-            rotaciones y cámara. Sensación total de inmersión.
-          </p>
-          <p>
-            <strong>6. Usabilidad:</strong> Experiencia intuitiva aunque
-            exigente en recursos. Menor rendimiento móvil, pero control
-            excelente.
-          </p>
-          <p>
-            <strong>7. Técnico:</strong> WebGL, render en tiempo real, efectos
-            físicos y optimización avanzada. Código modular y fluido.
-          </p>
-          <p>
-            <strong>8. Criterios de excelencia:</strong> Innovación visual
-            impecable. Convierte la navegación en experiencia sensorial.
-          </p>
-          <p>
-            <strong>9. Conclusión:</strong> Arte tecnológico al servicio del
-            branding. Desafía los límites del diseño web.
-          </p>
+        <div class="site-preview">
+          <iframe
+            src="https://www.makemepulse.com/"
+            title="Make Me Pulse"
+            loading="lazy"
+          ></iframe>
         </div>
-      </section>
+        <button class="toggle-analysis" onclick="toggleAnalysis(this)">
+          Ver análisis completo
+        </button>
+        <div class="analysis-collapsible">
+          <div class="analysis-pair-grid">
+            <section class="analysis-block">
+              <h3>Selección:</h3>
+              <p>
+                Elegí makemepulse porque es de esas agencias que llevan años
+                marcando el paso en experiencias interactivas, pero sin perder
+                el foco en utilidad y marca. Su claim de “turn aesthetics into
+                experiences” describe justo lo que quiero analizar: cómo
+                convierten lo bonito en algo que la gente realmente usa y
+                comparte. Además, tienen un historial de clientes potentes
+                (Nike, Hermes o Google) y premios que avalan la propuesta.
+              </p>
+            </section>
+            <section class="analysis-block">
+              <h3>Impresión inicial:</h3>
+              <p>
+                La portada te saluda con un tono creativo pero claro: estudio
+                global, experiencias inmersivas y un showreel que te mete en
+                clima sin rodeos. No es la típica home saturada; hay ritmo,
+                titulares con voz y piezas que invitan a curiosear casos
+                recientes. La sensación es de estudio “de autor” que entiende el
+                espectáculo, pero no descuida el resultado.
+              </p>
+            </section>
+            <section class="analysis-block">
+              <h3>Estructura:</h3>
+              <p>
+                El menú es sencillo y lógico: Home, Case studies, News, What we
+                do, Who we are, Contact; lo justo para orientarte sin perder
+                tiempo. Los accesos a proyectos están bien visibles y el
+                apartado de news ayuda a entender cómo piensan, no solo lo que
+                ejecutan. La página de contacto es directa y muestra alcance
+                internacional, lo que también comunica capacidad de producción.
+                Se agradece que las rutas estén pensadas para que pases de
+                inspiración a credenciales y a contacto en dos clics.
+              </p>
+            </section>
+            <section class="analysis-block">
+              <h3>Visual:</h3>
+              <p>
+                La identidad visual mezcla tipografías con carácter y bloques de
+                imagen y vídeo que respiran; se siente como una editorial
+                digital. Mantienen una paleta limpia de blanco y negro que deja
+                que cada proyecto sea el protagonista, algo clave cuando tu
+                valor está en el caso. El conjunto transmite equilibrio.
+              </p>
+            </section>
+            <section class="analysis-block">
+              <h3>Interacción:</h3>
+              <p>
+                Las transiciones son fluidas y las microinteracciones refuerzan
+                la lectura (hover y cambios suaves). No hay “scroll-jacking” ni
+                trucos que te saquen del contenido; la sensación es de control y
+                fluidez. Cuando tocan proyectos inmersivos, sí notas contenido
+                extra, pero están al servicio de la historia. Hay coherencia
+                entre interacción y narrativa.
+              </p>
+            </section>
+            <section class="analysis-block">
+              <h3>Usabilidad:</h3>
+              <p>
+                La navegación es predecible y los textos no se enredan; se
+                entiende qué hace el estudio y cómo lo hace. El contraste y los
+                tamaños facilitan la lectura, y la jerarquía visual está clara
+                (titulares, descripciones, CTA). Me gusta que los case studies
+                no solo enseñen “pantallazos”, sino contexto y propósito, lo
+                cual ayuda a usuarios no técnicos a valorar el trabajo.
+              </p>
+            </section>
+          </div>
+        </div>
+
+        <section class="technical-section">
+          <h3>Técnico:</h3>
+
+          <div class="metrics-cards">
+            <div class="metric">
+              <span class="metric-label">Performance Score</span>
+              <span class="metric-value">59/100</span>
+            </div>
+            <div class="metric">
+              <span class="metric-label">Wave</span>
+              <span class="metric-value">2 errors<br />3 contrast errors</span>
+            </div>
+            <div class="metric">
+              <span class="metric-label">W3C Validator</span>
+              <span class="metric-value">31 errors<br />15 info messages</span>
+            </div>
+          </div>
+          <p class="technical-text">
+            En rendimiento, la página saca 59/100. Lo bueno es que aparece
+            rápido y lo malo es que tarda en cargar el bloque principal y TBT
+            550 ms indica que el JavaScript bloquea bastante la respuesta. En
+            accesibilidad, WAVE marca 2 errores (imágenes sin alternative text)
+            y 3 errores de contraste (texto con poco contraste). El W3C
+            Validator señala 31 errores y 15 avisos: cosas de higiene como
+            unidades CSS que faltan y atributos duplicados.
+          </p>
+        </section>
+
+        <section class="final-grid">
+          <div class="final-block">
+            <h3>Criterios de excelencia:</h3>
+            <p>
+              Con la rúbrica tipo Awwwards (Diseño 40%, Usabilidad 30%,
+              Creatividad 20%, Contenido 10%), makemepulse puntúa muy fuerte en
+              Creatividad y Diseño: dominan el relato y la ejecución visual.
+              Usabilidad se mantiene alta por estructura clara y señales
+              consistentes; y el Contenido está bien enmarcado en casos con
+              contexto, no sólo arte por arte.
+            </p>
+          </div>
+          <div class="final-block">
+            <h3>Conclusión:</h3>
+            <p>
+              Make Me Pulse destaca por contar bien las cosas: visual potente,
+              interacción cuidada y mensaje claro. Te sorprende sin marearte, y
+              eso hace que los proyectos se recuerden. Lo menos fuerte es que
+              tanto visual puede pesar y bajar algo el rendimiento si no se
+              optimiza. Aun así, es un buen ejemplo de cómo unir idea con diseño
+              y experiencia sin perder claridad.
+            </p>
+          </div>
+        </section>
+      </article>
 
       <!-- MONADS -->
-      <section id="monads">
-        <h2>Monads</h2>
-        <iframe
-          src="https://www.monads.ch/"
-          title="Monads Website"
-          width="100%"
-          height="400"
-          loading="lazy"
-        ></iframe>
-
-        <div class="analysis-text">
-          <p>
-            <strong>1. Selección:</strong> Ejemplo de minimalismo suizo aplicado
-            al diseño web. Precisión y simplicidad como valores centrales.
-          </p>
-          <p>
-            <strong>2. Impresión inicial:</strong> Transmite serenidad y
-            confianza con un estilo limpio y profesional.
-          </p>
-          <p>
-            <strong>3. Estructura:</strong> Modular, simétrica y clara.
-            Navegación lateral con jerarquía definida y transiciones limpias.
-          </p>
-          <p>
-            <strong>4. Visual:</strong> Paleta blanca, tipografía sans-serif y
-            amplio uso del espacio en blanco. Equilibrio perfecto entre forma y
-            función.
-          </p>
-          <p>
-            <strong>5. Interacción:</strong> Microanimaciones sutiles y
-            transiciones suaves. Todo transmite calma y control.
-          </p>
-          <p>
-            <strong>6. Usabilidad:</strong> Excelente legibilidad, carga rápida
-            y comportamiento predecible. Accesible y fluido.
-          </p>
-          <p>
-            <strong>7. Técnico:</strong> Ligero y optimizado, probablemente con
-            frameworks modernos y render estático. Core Web Vitals
-            sobresalientes.
-          </p>
-          <p>
-            <strong>8. Criterios de excelencia:</strong> Pureza formal y dominio
-            del orden. Demuestra que la excelencia puede ser silenciosa.
-          </p>
-          <p>
-            <strong>9. Conclusión:</strong> Ejemplo de minimalismo funcional. La
-            belleza racional como expresión de sofisticación.
-          </p>
+      <article id="monads" class="site-analysis">
+        <div class="analysis-header">
+          <span class="site-number">03</span>
+          <h2>Monads</h2>
+          <a
+            class="site-link"
+            href="https://www.monads.ch/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visitar sitio web ↗
+          </a>
         </div>
-      </section>
+
+        <div class="site-preview">
+          <iframe
+            src="https://www.monads.ch/"
+            title="Make Me Pulse"
+            loading="lazy"
+          ></iframe>
+        </div>
+        <button class="toggle-analysis" onclick="toggleAnalysis(this)">
+          Ver análisis completo
+        </button>
+        <div class="analysis-collapsible">
+          <div class="analysis-pair-grid">
+            <section class="analysis-block">
+              <h3>Selección:</h3>
+              <p>
+                Elegí Monad porque me gustó mucho la estética que sigue: limpia,
+                precisa y con ese aire suizo que ordena todo sin gritar. Me
+                interesa justo por eso y porque no es una agencia de diseño al
+                uso; su web no va de vender “packaging de servicios”, sino de
+                enseñar una forma de trabajar muy propia.
+              </p>
+            </section>
+            <section class="analysis-block">
+              <h3>Impresión inicial:</h3>
+              <p>
+                La homepage entra con autoridad: tipografías grandes y aire
+                generoso. Hay sensación de calma, como si todo estuviera
+                exactamente donde debe estar, y eso transmite control. El
+                movimiento existe, pero en pequeñas dosis que te empujan a
+                seguir bajando sin distraerte. Te quedas con la idea de estudio
+                fino, obsesionado con el detalle más que con los trucos.
+              </p>
+            </section>
+            <section class="analysis-block">
+              <h3>Estructura:</h3>
+              <p>
+                Nada de laberintos: desde la home page llegas a todos los
+                apartados de la web simplemente haciendo scroll. El menú es
+                claro y se mantiene consistente, así que ubicarte es inmediato.
+                Se siente una arquitectura pensada para que pases de mirar a
+                escribirles sin esforzarte en buscar el contacto.
+              </p>
+            </section>
+            <section class="analysis-block">
+              <h3>Visual:</h3>
+              <p>
+                Dominan el blanco y negro con acentos de color en las piezas, lo
+                que deja a la tipografía llevar la voz. La composición respira:
+                márgenes, columnas y tamaños juegan a favor de la lectura. No
+                hay mil estilos conviviendo; hay una identidad contenida que
+                deja que cada proyecto brille. También destacan los iconos
+                personalizados en cada apartado desplegable de información.
+              </p>
+            </section>
+            <section class="analysis-block">
+              <h3>Interacción:</h3>
+              <p>
+                Animaciones suaves, hovers útiles y transiciones que dan
+                continuidad sin imponer el camino. No hay scroll-jacking
+                abusivo, se agradece el leve desplazamiento vertical que hay
+                revelando imágenes o enfatizando titulares. La experiencia está
+                más cerca de estar cómodo navegando por la web que de alucinar
+                en cada clic, lo cual para un sitio web como este funciona bien.
+              </p>
+            </section>
+            <section class="analysis-block">
+              <h3>Usabilidad:</h3>
+              <p>
+                Buen contraste, tamaños de letra generosos y un orden visual que
+                facilita la lectura. Las llamadas a la acción están donde las
+                esperas y el lenguaje es directo, así que cualquier perfil
+                entiende qué hace el estudio. Si alguna pieza pesa por vídeo o
+                imagen, el texto no desaparece: sigues teniendo contexto. En
+                general, te mueves con cero dudas.
+              </p>
+            </section>
+          </div>
+        </div>
+
+        <section class="technical-section">
+          <h3>Técnico:</h3>
+
+          <div class="metrics-cards">
+            <div class="metric">
+              <span class="metric-label">Performance Score</span>
+              <span class="metric-value">95/100</span>
+            </div>
+            <div class="metric">
+              <span class="metric-label">Wave</span>
+              <span class="metric-value"
+                >1 errors<br />281 contrast errors</span
+              >
+            </div>
+            <div class="metric">
+              <span class="metric-label">W3C Validator</span>
+              <span class="metric-value"
+                >5 errors<br />
+                2 warnings<br />
+                15 info messages</span
+              >
+            </div>
+          </div>
+          <p class="technical-text">
+            En rendimiento, la página saca 95/100, aparece rápido, pinta el
+            bloque principal sin esperas y responde ágil a las interacciones. En
+            accesibilidad, WAVE marca 1 error y 281 errores de contraste, es
+            decir, el problema no es estructura, es sobre todo combinaciones de
+            color que no llegan al nivel AA por tener imágenes de fondo. El W3C
+            Validator señala 5 errors, 2 warnings y 47 info messages: cosas de
+            higiene como unidades CSS que faltan y atributos duplicados.
+          </p>
+        </section>
+
+        <section class="final-grid">
+          <div class="final-block">
+            <h3>Criterios de excelencia:</h3>
+            <p>
+              Con la rúbrica tipo Awwwards, aquí destacaría Diseño por sistema
+              tipográfico y grid impecable, y Usabilidad por la limpieza. La
+              Creatividad se juega en sutilezas como el ritmo del scroll más que
+              en artificio técnico, y el Contenido funciona porque explica lo
+              justo sin rellenar.
+            </p>
+          </div>
+          <div class="final-block">
+            <h3>Conclusión:</h3>
+            <p>
+              En general me ha gustado por la estética que sigue: limpia,
+              cuidada y muy coherente. Pero echo en falta algún apartado más en
+              el menú (por ejemplo, servicios, proceso o equipo) o testimonios
+              de clientes que aporten más seguridad y credibilidad. Con un poco
+              de “prueba social” y algo más de contexto, la web transmitiría
+              mucha más confianza sin perder su estilo.
+            </p>
+          </div>
+        </section>
+      </article>
+
+      <!-- ACTIVE HOP -->
+      <article id="hop" class="site-analysis">
+        <div class="analysis-header">
+          <span class="site-number">04</span>
+          <h2>Active Hop</h2>
+          <a
+            class="site-link"
+            href="https://www.active-hop.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visitar sitio web ↗
+          </a>
+        </div>
+
+        <div class="site-preview">
+          <img
+            src="https://ik.imagekit.io/gemagarrido/sow/activehop1.png?updatedAt=1760992982906"
+            alt="Previsualización Active Hop"
+            loading="lazy"
+          />
+        </div>
+        <button class="toggle-analysis" onclick="toggleAnalysis(this)">
+          Ver análisis completo
+        </button>
+        <div class="analysis-collapsible">
+          <div class="analysis-pair-grid">
+            <section class="analysis-block">
+              <h3>Selección:</h3>
+              <p>
+                Elegí esta web por el glassmorfismo que usa en la interfaz y
+                porque tenía una dinámica de scroll distinta a las anteriores.
+                Me interesaba ver si este estilo cristal sumaba a la lectura o
+                solo era adorno. También me llamó la atención cómo el scroll
+                condiciona la experiencia desde el primer segundo. En resumen,
+                la escogí por estética y por probar una interacción más
+                arriesgada
+              </p>
+            </section>
+            <section class="analysis-block">
+              <h3>Impresión inicial:</h3>
+              <p>
+                La botella girando llama muchísimo la atención, pero termina
+                distrayendo del resto de la información. La sensación es que
+                tengo que hacer scroll todo el rato para que se revele muy poco
+                contenido en cada paso, y eso cansa. Visualmente impacta, sí,
+                pero la relación esfuerzo/recompensa se siente desbalanceada.
+                Acabo con la idea de que el show se come un poco al mensaje.
+              </p>
+            </section>
+            <section class="analysis-block">
+              <h3>Estructura:</h3>
+              <p>
+                La estructura es clara: productos, sobre ellos y suscripción; no
+                hay pérdida. Me gusta que muestran la ruta en cada clic, lo que
+                te mantiene orientado. Las fichas de producto y las secciones
+                principales están bien separadas, así que sabes dónde estás en
+                todo momento. Es un esqueleto sencillo que funciona, más allá
+                del “envoltorio” interactivo.
+              </p>
+            </section>
+            <section class="analysis-block">
+              <h3>Visual:</h3>
+              <p>
+                Colores pasteles y claros que dan calma, y una tipografía con
+                personalidad casi robótica pero fácil de leer. Los títulos
+                grandes están muy bien definidos y te guían, aunque los párrafos
+                son pequeños y el contraste entre tamaños se nota. Con el
+                glassmorfismo hay momentos bonitos, pero si se suma a
+                animaciones y transparencias, a veces resta legibilidad. En
+                general, el look es actual y cuidado.
+              </p>
+            </section>
+            <section class="analysis-block">
+              <h3>Interacción:</h3>
+              <p>
+                El scroll-jacking es llamativo y a mí me resulta un poco molesto
+                porque me quita control. Los hovers en botones son muy dinámicos
+                y las animaciones son suaves, pero a veces cuesta que carguen.
+                Aun así, cuando todo entra, la experiencia se siente fluida y
+                coherente con la idea de producto. Me quedo con la sensación de
+                que está bien ejecutado, pero demasiado insistente con el
+                scroll.
+              </p>
+            </section>
+            <section class="analysis-block">
+              <h3>Usabilidad:</h3>
+              <p>
+                Los títulos grandes ayudan, pero la información en pequeño
+                complica leer rápido. Por culpa de algunas animaciones, hay
+                títulos que no se leen bien en ciertos momentos. El contraste de
+                color está correcto y no da problemas graves. En conjunto,
+                usable, pero con detalles que penalizan la lectura continua.
+              </p>
+            </section>
+          </div>
+        </div>
+
+        <section class="technical-section">
+          <h3>Técnico:</h3>
+
+          <div class="metrics-cards">
+            <div class="metric">
+              <span class="metric-label">Performance Score</span>
+              <span class="metric-value">56/100</span>
+            </div>
+            <div class="metric">
+              <span class="metric-label">Wave</span>
+              <span class="metric-value">7 errors<br />3 alerts</span>
+            </div>
+            <div class="metric">
+              <span class="metric-label">W3C Validator</span>
+              <span class="metric-value"
+                >3 errors<br />
+                4 warnings<br />
+                50 info messages</span
+              >
+            </div>
+          </div>
+          <p class="technical-text">
+            En rendimiento, la página saca 56/100, pinta el bloque principal sin
+            esperas, pero tarda en verse completa. En accesibilidad, WAVE marca
+            7 errores y 3 alertas, como botones vacíos, enlaces vacíos y una
+            referencia ARIA rota. El W3C Validator señala 3 errors, 4 warnings y
+            50 info messages: ID duplicado, etiqueta script fuera de lugar y
+            avisos de secciones sin encabezado.
+          </p>
+        </section>
+
+        <section class="final-grid">
+          <div class="final-block">
+            <h3>Criterios de excelencia:</h3>
+            <p>
+              Diseño muy bueno por estética y composición; se nota intención y
+              detalle. Usabilidad mejorable por el scroll-jacking y el tamaño de
+              los textos de apoyo. Creatividad sobresaliente por la interacción
+              directa con el producto (la botella y el flujo), que es muy
+              recordable. Contenido al punto: dice lo necesario sin enrollarse,
+              lo cual se agradece.
+            </p>
+          </div>
+          <div class="final-block">
+            <h3>Conclusión:</h3>
+            <p>
+              Me gusta la estética que sigue y cómo todo mantiene una línea
+              visual coherente y actual. Lo que menos me convence es que el
+              scroll forzado y la botella girando acaban estorbando un poco la
+              lectura y la exploración. Si ajustaran el tamaño de los párrafos y
+              relajaran la mecánica del scroll para dar más información por
+              pantalla, la experiencia ganaría mucho. En conjunto, es una web
+              con ideas potentes y look muy cuidado, pero que agradecería un
+              poco más de control para el usuario.
+            </p>
+          </div>
+        </section>
+      </article>
     </main>
 
-    <footer>
-      <p>
-        © 2025 Web Atelier (UDIT) – Informe de análisis realizado por [Tu
-        Nombre]
-      </p>
+    <footer class="site-footer">
+      <p>© 2025 Web Atelier (UDIT) – Informe de análisis. Gema Garrido</p>
     </footer>
+
+    <!-- JS botón analisis -->
+    <script>
+      function toggleAnalysis(button) {
+        const container = button.nextElementSibling;
+        container.classList.toggle("expanded");
+
+        button.textContent = container.classList.contains("expanded")
+          ? "Ocultar análisis"
+          : "Ver análisis completo";
+      }
+    </script>
   </body>
 </html>
